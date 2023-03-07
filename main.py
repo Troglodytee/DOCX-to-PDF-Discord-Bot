@@ -20,17 +20,18 @@ bot = commands.Bot(
 
 @bot.event
 async def on_message(message):
-    for i in message.attachments:
-        for j in formats:
-            if i.filename.endswith("."+j):
-                await i.save(fp=path+i.filename)
-                doc = aw.Document(path+i.filename)
-                new_name = "".join(i.filename.split(".")[:-1])+".pdf"
-                doc.save(path+new_name)
-                await message.channel.send(file=discord.File(path+new_name))
-                system("DEL "+path+i.filename)
-                system("DEL "+path+new_name)
-                break
+    if message.content.startswith("$convert"):
+        for i in message.attachments:
+            for j in formats:
+                if i.filename.endswith("."+j):
+                    await i.save(fp=path+i.filename)
+                    doc = aw.Document(path+i.filename)
+                    new_name = "".join(i.filename.split(".")[:-1])+".pdf"
+                    doc.save(path+new_name)
+                    await message.channel.send(file=discord.File(path+new_name))
+                    system("DEL "+path+i.filename)
+                    system("DEL "+path+new_name)
+                    break
 
 
 bot.run(
