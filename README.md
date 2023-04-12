@@ -1,16 +1,18 @@
 # DOCX-to-PDF-Discord-Bot
-
-## Introduction
-
-This bot help you to convert .docx or .odt files to PDF, with one simple command.
-
-## Advantages / Disadvantages
-
-* Advantages
-    - Simple to use
-* Disadvantages
-    - It also write the Aspose logo in the background of the PDF files. (I will try to patch it in the future)
-
-## Utilisation
-
-To indicate to the bot to convert the files you send, you have to use ``$convert`` at the start of your message.
+This is a Discord bot that can convert `DOCX` or `ODT` files into `PDF`.
+## Features
+- `DOCX` or `ODT` to `PDF` converter
+## Installation
+1. Download the repository by clicking on `Code > Download ZIP`
+2. Extract the ZIP file
+3. Go into `main.pyw` and replace the placeholders by your informations
+4. Run `main.pyw`
+## Requirements
+- Python 3.7
+- Python discord library
+- Python aspose library
+- Python os library
+## Usage
+After running `main.pyw` you can send `$convert` in a channel the bot can read and send messages, with to file you want to convert attach to it.
+## Warning
+Because of the usage of the "Aspose" Python library, the Aspose logo will appear in the background of the result PDF pages.
