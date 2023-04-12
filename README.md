@@ -9,9 +9,9 @@ This is a Discord bot that can convert `DOCX` or `ODT` files into `PDF`.
 4. Run `main.pyw`
 ## Requirements
 - Python 3.7
-- Python discord library
-- Python aspose library
-- Python os library
+- Python `discord` library
+- Python `aspose` library
+- Python `os` library
 ## Usage
 After running `main.pyw` you can send `$convert` in a channel the bot can read and send messages, with the file you want to convert attach to it.
 ## Warning
