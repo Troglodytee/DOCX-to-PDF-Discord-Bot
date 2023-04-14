@@ -1,4 +1,6 @@
 # DOCX-to-PDF-Discord-Bot
+![Preview image](./preview/preview.jpg)
+
 This is a Discord bot that can convert `DOCX` or `ODT` files into `PDF`.
 ## Features
 - `DOCX` or `ODT` to `PDF` converter
